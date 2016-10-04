@@ -1,0 +1,63 @@
+<!-- This specifies to the browser what version of HTML the page is wrritten in -->
+<!DOCTYPE html> 
+
+	
+<html>
+<!--Opening the head, this is loaded/processed prior to anything being displayed in the body -->
+	<head>
+		<!--The title is displayed on the tab and its the name automatically given when saving the page to your favorites-->
+		<title>Home</title>
+		<!-- Loading in JavaScript and a jQuery interface. Note that Javascript/jQuery is loaded in before the interface extension. -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+		<!-- Specifies the character encoding for the document -->
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<!-- Links the appropriate CSS file -->
+		<link rel="stylesheet" type="text/css" href="myCSS.css">
+		<!-- Links the appropriate JavaScript file, this is run before the aesthetics are loaded so anything that needs to be calculated and placed inside the HTML is already calculated or retrieved (for example cart information from LocalStorage) -->
+		<script type="text/javascript" src="myJS.js"></script>
+	</head>
+	
+	<!-- Opening the body of the HTML -->
+	<body>
+		
+		<!-- A "division" in the HTML document, this is used primarily due to how it can easily group block-elements together to format with CSS, making the page look as desired -->
+		<div id="title">
+			<!-- The "a" tag defines a hyperlink -->
+			<!-- "id" shows that this tag will contain the syling properties from CSS of the "#titlename" identifier -->
+			<a id="titlename"><img src="http://fontmeme.com/embed.php?text=MnR%20Clothing&name=kashmir.ttf&size=100&style_color=00BBFF" alt="Led Zeppelin Font"></a>
+			<!-- the "p" tag defines a paragraph and is usually the most commonly used tag where text is -->
+			<p id="cartTotal" >Total: £0.00</p>
+			<p id="cart"><a href="cart.html" style="text-decoration:none; color:white;"> Cart/Checkout &nbsp;&nbsp;&nbsp;&nbsp;</a></p>
+		</div>
+		
+		<div id="header">
+			<!-- An unordered list is used here as numbers are not required for this list -->
+			<ul>
+				<!-- These are two list items, both being links to other parts of the website -->
+				<li><a href="Products.html">Products</a></li>
+				<li><a href="General_Information.html">General Information</a></li>
+			</ul>
+		</div>
+		
+		<div id="offers">
+			<!-- These are two images, "src" contains the file path for the source of the image -->
+			<img src="offer1.png" class="offerPics" alt="Offer 1">
+			<img src="offer2.png" class="offerPics" alt="Offer 2">
+		</div>
+		
+		<div id="newsletter">
+			<!-- Here the style is specified, this type of styling is known as "inline" styling as will override any internal or external styles -->
+			<h2 style="float:left; color: white; font-family: arial; font-size: 26px; margin: 0em; margin-right:0.5em;"> Sign up for our newsletter!&nbsp; Email:</h2>
+			<!-- This defines an input box where the user is able to write inside of it -->
+			<input type="text" name="email" value="Enter E-mail Address" style="margin-top:0.5em"> 
+			<!-- This shows a button, the user can click the button and "onclick" a procedure named "signUp()" is executed from the external JS file -->
+			<button onclick="signUp()" style="margin-top:0.5em">Sign Up!</button>
+		</div>
+		
+		
+		
+	</body>
+	
+</html>
+ 

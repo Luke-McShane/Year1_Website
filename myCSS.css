@@ -1,0 +1,188 @@
+/* A tag without a selector ("#" or ".") shows that these attributes will apply to any document that yields the specifier (in this case "body"). */
+/*  This means that any page accessing this CSS document will have "background-color:black" unless there is internal or inline styling */
+body{
+background-color:black;
+}
+/* The hashtag is an ID selector, and any tag that yields the "title"  selector will obtain the styling present here */
+
+#title{
+border:2px solid white;
+height:150px; 
+border-bottom:1em;
+padding:0.5em;
+border-top-left-radius:1em;
+border-top-right-radius:1em;
+}
+
+#titlename{
+border:0em;
+float:left;
+}
+
+#cart{
+font-family:arial;
+font-size:45px;
+color:white;
+float:right;
+top:100px
+}
+
+#cartTotal{
+font-family:arial;
+font-size:45px;
+color:white;
+float:right;
+left:300px;
+top:100px;
+}
+
+#header{
+border:2px solid white;
+border-bottom-right-radius:1em;
+border-bottom-left-radius:1em;
+padding:0.5em;
+height:170px
+}
+
+#header ul{
+float:left;
+color:white;
+font-family:arial;
+font-size:40px;
+list-style-image:url('metal_fist_nb2.png');
+}
+
+#header ul li{
+margin:0px 60px;
+float:left;
+}
+
+#offers{
+text-align:center;
+margin:2em;
+}
+
+/* This is a class selector, any tag with this class will obtain these properties */
+.offerPics{
+display:inline-block;
+width:500px;
+height:500px;
+margin-left:auto;
+margin-right:auto;
+padding:2em;
+padding-right:0em;
+padding-left:0em;
+}
+
+#imgs{
+display:inline-block;
+width:500px;
+height:500px;
+margin-left:auto;
+margin-right:auto;
+padding:2em;
+padding-right:0em;
+padding-left:0em;
+}
+
+#newsletter{
+border-top-left-radius:1em;
+border-top-right-radius:1em;
+border:2px solid white;
+padding:0.5em;
+height:30px;
+}
+
+#products{
+border: 2px solid white;
+float: left;
+}
+
+#products div{
+float:left;
+display: inline;
+margin:  auto;
+border: 2px solid white;
+padding:5em;
+}
+
+.imgs{
+width:225px;
+height:325px;
+margin:0em;
+padding:0em;
+display:inline-block;
+}
+
+#dragPic{
+width:225px;
+height:300px;
+border: 2px solid white;
+}
+
+#dragPicDiv{
+display: inline;
+margin:  0em;
+border: 2px solid blue;
+}
+
+.button{
+position: absolute;
+}
+
+h1{
+margin: 1em 1em;
+display:inline;
+}
+
+h2{
+color:white;
+font:arial;
+float:bottom;
+}
+
+h3{
+color:white;
+font:arial;
+margin:0.1em;
+}
+
+#cartDiv{
+text-align:center;
+font-family: arial;
+color:white;
+width: 1920px;
+border: 2px solid white;
+display: table-cell;
+}
+
+.containers{
+text-align:center;
+margin:0 2em 0 0;
+height:500px;
+display:inline-table;
+font-size: 45px;
+font-family:arial;
+align-items:center;
+}
+
+#container1{width:200px;}
+
+#container2{width:50px;}
+
+#container3{width:150px;}
+
+#generalInformation{
+text-align:center;
+font-family: arial;
+color:white;
+border: 2px solid white;
+}
+
+.text{
+display:inline;
+}
+
+.details { width: 200px;display: inline-block; margin: 0 20px 0 0; }
+span { display: block; margin: 0 0 3px; font-size: 1.5em; font-weight: bold; }
+.p1{ width: 200px; border: 1px solid blue; padding: 5px; background-color:white; color: black; }

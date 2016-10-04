@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Product Page</title>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+		<script type="text/javascript" src="http://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
+		
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="myCSS.css">
+		<script type="text/javascript" src="myJS.js"></script>
+			
+	</head>
+	
+	
+	<body>
+
+		
+	
+		<div id="title">
+			<a id="titlename"><img src="http://fontmeme.com/embed.php?text=MnR%20Clothing&name=kashmir.ttf&size=100&style_color=00BBFF" alt="Led Zeppelin Font"></a>
+			
+			<p id="cartTotal" >Total: £0.00</p>
+			<p id="cart"><a href="cart.html" style="text-decoration:none; color:white;"> Cart/Checkout &nbsp;&nbsp;&nbsp;&nbsp;</a></p>
+			
+		</div>
+		
+		<div id="header">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="General_Information.html">General Information</a></li>
+			</ul>
+		</div>
+		
+		<div id="products">
+			<!-- A class is predominantly used when more than one tag needs identical styling -->
+			<div class="imgs">
+				<!-- "alt" is a string of text that is displayed if the browser (or some other reason) cannot load the image -->
+				<img src="megadeth.jpg" style="width:240px; height:300px" alt="Megadeth">
+				<h3>Price: £14.99</h3>
+				<h3>Item: 1</h3>
+				<h3>Quantity: 1</h3>
+				<!--  This button calls a procedure but passes 3 different values into the procedure as arguments -->
+				<button onclick="updateCartArray(0, 1, 14.99)" class="button">Add to cart</button>
+			</div>
+			
+			<div class="imgs">
+				<img src="sabbath.jpg" style="width:240px; height:300px" alt="Black Sabbath">
+				<h3>Price: £14.99</h3>
+				<h3>Item: 2</h3>
+				<h3>Quantity: 1</h3>
+				<button onclick="updateCartArray(1, 1, 14.99)" class="button">Add to cart</button>
+			</div>
+			
+			<div class="imgs">
+				<img src="led.jpg" style="width:240px; height:300px" alt="Led Zeppelin">
+				<h3>Price: £24.99</h3>
+				<h3>Item: 3</h3>
+				<h3>Quantity: 1</h3>
+				<button onclick="updateCartArray(2, 1, 24.99)" class="button">Add to cart</button>
+			</div>
+			
+			<div class="imgs">
+				<img src="floyd.jpg" style="width:240px; height:300px" alt="Pink Floyd">
+				<h3>Price: £17.99</h3>
+				<h3>Item: 4</h3>
+				<h3>Quantity: 1</h3>
+				<button onclick="updateCartArray(3, 1, 17.99)" class="button">Add to cart</button>
+			</div>
+				
+			<div id="dragPicDiv" style="border:2px solid blue; float:center; margin:0em; padding: 3em; position:absolute; top:65%; left:82.22%">
+				<img src="dragHere.png" id="dragPic" alt="Drag product here to purchase">
+			</div>
+			
+			<div class="imgs">
+				<img src="anthrax.jpg" style="width:240px; height:300px" alt="Anthrax">
+				<h3>Price: £19.99</h3>
+				<h3>Item: 5</h3>
+				<h3>Quantity: 1</h3>
+				<button onclick="updateCartArray(4, 1, 19.99)" class="button">Add to cart</button>
+			</div>
+			
+			<div class="imgs">
+				<img src="zappa.jpg" style="width:240px; height:300px" alt="Frank Zappa">
+				<h3>Price: £19.99</h3>
+				<h3>Item: 6</h3>
+				<h3>Quantity: 1</h3>
+				<button onclick="updateCartArray(5, 1, 19.99)" class="button">Add to cart</button>
+			</div>
+			
+			<div class="imgs">
+				<img src="pantera.jpg" style="width:240px; height:300px" alt="Pantera">
+				<h3>Price: £14.99</h3>
+				<h3>Item: 7</h3>
+				<h3>Quantity: 1</h3>
+				<button onclick="updateCartArray(6, 1, 14.99)" class="button">Add to cart</button>
+			</div>
+			
+			<div class="imgs">
+				<img src="hendrix.jpg" style="width:240px; height:300px" alt="Jimi Hendrix">
+				<h3>Price: £14.99</h3>
+				<h3>Item: 8</h3>
+				<h3>Quantity: 1</h3>
+				<button onclick="updateCartArray(7, 1, 14.99)" class="button">Add to cart</button>
+			</div>
+		
+		</div>
+		
+		<div id="newsletter">
+			<h2 style="float:left; color: white; font-family: arial; font-size: 26px; margin: 0em; margin-right:0.5em;"> Sign up for our newsletter!&nbsp; Email:</h2>
+			<input type="text" name="email" value="Enter E-mail Address" style="margin-top:0.5em"> 
+			<button onclick="signUp()" style="margin-top:0.5em">Sign Up!</button>
+		</div>
+	</body>
+	
+</html>

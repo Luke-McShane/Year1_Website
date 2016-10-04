@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Cart</title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="myCSS.css">
+		<script type="text/javascript" src="myJS.js"></script>
+	</head>
+	
+	<body>
+		<!-- Here the script is used because this page requires the cart to be updated then displayed visually for the user. Althought this could have been done potentially more elegantly in the "<body>", I used this way to try out JavaScript within a HTML document -->
+		<script>
+			window.onload = function(){
+				loadContainers();
+				updateCart();
+			}
+		</script>
+		<div id="title">
+			<a id="titlename"><img src="http://fontmeme.com/embed.php?text=MnR%20Clothing&name=kashmir.ttf&size=100&style_color=00BBFF" alt="Led Zeppelin Font"></a>
+			
+			<p id="cartTotal" >Total: £0.00</p>
+			<p id="cart"> Cart/Checkout &nbsp;&nbsp;&nbsp;&nbsp;</p>
+		</div>
+		
+		<div id="header">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="General_Information.html">General Information</a></li>
+				<li><a href="Products.html">Products</a></li>
+			</ul>
+		</div>
+		
+		<div id="cartDiv">
+			<div>
+				<h1 style="color:white;font-family:arial;font-size:45px;display:inline-block;">In your cart: </h1>
+			</div>
+			<div>
+				<h1>Item:</h1>
+				<h1>Quantity:</h1>
+				<h1>Price:</h1>
+			</div>
+			<div>
+				<div id="container1"  class="containers"></div>
+				<div id="container2"  class="containers"></div>
+				<div id="container3"  class="containers"></div>
+			</div>
+			<div>
+				
+			</div>
+		</div>
+		
+		<div id="newsletter">
+			<h2 style="float:left; color: white; font-family: arial; font-size: 26px; margin: 0em; margin-right:0.5em"> Sign up for our newsletter!&nbsp; Email:</h2>
+			<input type="text" name="email" value="Enter E-mail Address" style="margin-top:0.5em;float:left"> 
+			<button onclick="signUp()" style="margin-top:0.5em;float:left">Sign Up!</button>
+		</div>
+	</body>
+	
+</html>
